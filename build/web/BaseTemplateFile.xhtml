@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:cc="http://xmlns.jcp.org/jsf/composite/LoginControl">
+    <h:head>
+        <title>Grant UniVersity</title>
+    </h:head>
+    <h:body>
+                <table border="0" width="100%" style="background-color: #808080; position: relative;" height="100px">
+            <tr>
+                <td width="85%"><p style="text-align: center; font-size: 40pt;color: #ffffff; font-family: Arial Rounded MT Bold;">Grant University</p></td>
+                <td><img src="Images/Education.jpg" alt="Education" width="200px" height="165px"/></td>
+            </tr>
+        </table>
+        <table bgcolor="white" border="1" align="top" width="100%" style="height: 470px;">
+            <tr>
+                <td bgcolor="#000080" width="20%" valign="top" align="center"><h:form><br/><br/>
+                        <h:commandLink style="font-family: vardana,Geneva,sans-serif; text-decoration: none;color: white;" action="Home" value="Home"/><br/><br/>
+                        <h:commandLink style="font-family: vardana,Geneva,sans-serif; text-decoration: none;color: white;" action="AboutUS" value="About Us"/><br/><br/>
+                        <h:commandLink style="font-family: vardana,Geneva,sans-serif; text-decoration: none;color: white;" action="Registration" value="Registration"/><br/><br/>
+                        <h:commandLink style="font-family: vardana,Geneva,sans-serif; text-decoration: none;color: white;" action="Admission" value="Admission"/><br/><br/>
+                        <h:commandLink style="font-family: vardana,Geneva,sans-serif; text-decoration: none;color: white;" action="ContactUs" value="Contact Us"/><br/><br/>
+                        <h:commandLink style="font-family: vardana,Geneva,sans-serif; text-decoration: none;color: white;" action="CourseDetails" value="Course Details"/><br/><br/>
+                    </h:form>
+                    <cc:LoginControl submitValue="Submit" resetValue="Reset"/>
+                </td>
+                <td width="85%" valign="top" bgcolor="white">
+                    <ui:insert name="body"/>
+                </td>
+            </tr>
+        </table>
+    </h:body>
+</html>
+
